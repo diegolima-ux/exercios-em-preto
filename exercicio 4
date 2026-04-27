@@ -1,0 +1,40 @@
+idade = 0
+estado_civil = "s","c" , "d", "v". upper
+sexo = "m", "f".upper
+salario = 0
+
+while idade >= 150 or salario <= 0:
+    print("qual seu estado civil? " \
+    "ex:s,c,d,v ")
+    estado_civil = input("digite seu estado civil:")
+    print("qual seu sexo?" \
+    "ex: m ou f")
+    sexo = input("solicite seu sexo:")
+    print("qual seu salario?")
+    salario = float(input("Digite seu salario:"))
+    idade = int(input("solicite sua idade:"))
+
+    if estado_civil == "s":
+        print("souteiro")
+    if estado_civil == "c":
+        print("casado")
+    if estado_civil == "v":
+        print("viuvo")
+    if estado_civil == "d":
+        print("divorciado")
+    else:
+        print("solicite novamente")
+    
+    
+    if sexo == "m":
+        print("masculino")
+    if sexo == "f":
+        print("feminino")
+    else:
+        print("solicite novamente")
+    
+    print("SUAS INFORMAÇOẼS ABAIXO")
+    print("seu estado civi:", estado_civil)
+    print("seu sexo:", sexo)
+    print("seu salario:", salario)
+    print("sua idade:", idade)
