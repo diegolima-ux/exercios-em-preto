@@ -1,0 +1,39 @@
+anos = 0
+tamanho = 0
+media = 0.30
+opcao = 0
+tamanho_media = 0
+
+while opcao <= 5 or tamanho >= 5:
+    print("1 - adicionar idade na oliveira")
+    print("2 - adicionar tamanho na oliveira")
+    print("3 - idade e tamanho da oliveira")
+    print("4 - fazer nada")
+    opcao = int(input("digite sua opcao:"))
+    
+    if opcao == 1:
+        anos = anos + 1
+        tamanho = tamanho + media
+        print("a oliveira tem:", tamanho)
+
+    elif opcao == 2:
+        anos = anos + 1
+        tamanho = tamanho + media
+        print("a planta tem:", tamanho)
+
+    elif opcao == 3:
+        tamanho = tamanho
+        media = media    
+        print("a planta tem", anos , "anos e seu tamanho e de", tamanho)
+
+    elif opcao == 4:
+        print("nada foi feito")
+
+    else:
+        print("nada foi feito")
+
+    if tamanho >= 5:
+        print("planta adulta")
+
+    elif tamanho <= 5:
+        print("planta em crescimento")
