@@ -1,0 +1,6 @@
+preco = 1.99
+
+print("Loja das Oliveiras – Tabela de preços")
+for i in range(1, 51):
+    total = i * preco
+    print(f"{i} muda(s) – R$ {total:.2f}")
