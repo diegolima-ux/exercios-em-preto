@@ -1,0 +1,25 @@
+
+irrigadas = 0
+litros = 500
+gasto_por_irrigacao = 30
+ciclos = 0
+contador = 0
+
+
+while  gasto_por_irrigacao <= 500:
+    print("1 - irrigar")
+    print("2 - ciclos gerados")
+
+    contador = int(input("digite uma opcao:"))
+
+
+    if contador == 1:
+     ciclos = ciclos + 1
+     litros = litros - 30
+     irrigadas = irrigadas + 1
+     print("voce irrigou"),
+
+    elif contador == 2:
+       print("voce gerou:", ciclos, "ciclos")
+    else:
+       print("opcao invalida")
